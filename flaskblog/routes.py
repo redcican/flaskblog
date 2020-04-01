@@ -107,3 +107,5 @@ def account():
         'static', filename='profile_pics/'+current_user.image_file)
     return render_template('account.html', title='Account',
                            image_file=image_file, form=form)
+
+@app.route("/post/new")
